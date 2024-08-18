@@ -33,10 +33,10 @@ function getComponentList() {
             isLocked: false,
             props: { title: '你的姓名', placeholder: '请输入姓名...' }
         },
-        // Input
+        // TextArea
         {
             fe_id: 'c4',
-            type: 'questionInput',
+            type: 'questionTextarea',
             title: '输入框2',
             isHidden: false,
             isLocked: false,
@@ -45,11 +45,11 @@ function getComponentList() {
         // Paragraphy
         {
             fe_id: 'c5',
-            type: 'questionParagraphy',
+            type: 'questionParagraph',
             title: '段落',
             isHidden: false,
             isLocked: false,
-            props: { text: '一行段落', isCenter: false }
+            props: { text: '一行段落\n一行段落2', isCenter: false }
         },
         // Radio
         {
@@ -80,7 +80,7 @@ function getComponentList() {
                 title: '多选标题',
                 isVertical: false,
                 list: [
-                    { value: 'item1', text: '选项1', checked: false },
+                    { value: 'item1', text: '选项1', checked: true },
                     { value: 'item2', text: '选项2', checked: false },
                     { value: 'item3', text: '选项3', checked: false },
                 ],
